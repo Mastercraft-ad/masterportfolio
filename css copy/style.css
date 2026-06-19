@@ -1,0 +1,437 @@
+body{
+  background-color: rgb(241, 238, 238);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0px;
+  margin: 8px;
+}
+
+
+/* NAVIGATION MENU CSS */
+nav{
+  background-color: rgb(2, 97, 151);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 15px;
+}
+
+img.logo{
+  width: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 3px solid rgb(132, 190, 224);
+  background-color: aliceblue;
+  margin-top: 5px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+
+
+}
+
+nav ul li {
+  margin-left: 5px;
+}
+
+
+nav li a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 16px;
+}
+
+a:hover{
+  background-color: rgba(170, 145, 88, 0.7);
+  cursor: pointer;
+  color: rgb(215, 197, 121);
+}
+
+
+.ProjectMenu{
+ position: relative;
+}
+
+.ProjectMenu:hover .projectdrop{
+  display: block;
+}
+
+.projectdrop{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(73, 67, 69);
+  padding: 10px;
+  min-width: fit-content;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.projectdrop li{
+  margin: 0;
+}
+
+.projectdrop li a{
+  display: block;
+  color: white;
+  padding: 8px 12px;
+}
+
+.projectdrop li a:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+section #projectsCard{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+/* PROJECTS SECTION CSS */
+section.projects{
+  margin: 15px;
+  padding: 20px;
+  background-color: rgb(177, 236, 236);
+  border-radius: 20px;
+}
+
+section.projects h1{
+  color: rgb(2, 97, 151);
+  margin-bottom: 20px;
+}
+
+.project-item{
+  flex: 1;
+  min-width: 280px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-item img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #e0e0e0;
+}
+
+.project-item h4{
+  color: rgb(2, 97, 151);
+  padding: 15px 15px 5px 15px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.project-item p{
+  color: #555;
+  padding: 0 15px 15px 15px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.project-links{
+  display: flex;
+  gap: 10px;
+  padding: 0 15px 15px 15px;
+  justify-content: flex-start;
+}
+
+.github-link,
+.live-link{
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid rgb(2, 97, 151);
+}
+
+.github-link{
+  background-color: rgb(2, 97, 151);
+  color: white;
+}
+
+.github-link:hover{
+  background-color: rgba(2, 97, 151, 0.1);
+  color: rgb(2, 97, 151);
+}
+
+.live-link{
+  background-color: white;
+  color: rgb(2, 97, 151);
+}
+
+.live-link:hover{
+  background-color: rgb(2, 97, 151);
+  color: white;
+}
+
+/* HERO CSS */
+section.hero{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 15px;
+  padding: 20px;
+  background-color: rgb(177, 236, 236);
+  border-radius: 20px;
+}
+
+p.aboutme{
+  font-size:larger;
+}
+
+p.available{
+  text-decoration: underline;
+}
+
+.heroImage img{
+  width: 100%;
+}
+
+button.work{
+  padding: 8px;
+  border-radius: 20px;
+  background-color:rgb(2, 97, 151);
+  color: #ffffff;
+}
+
+button.work:hover{
+  background-color: rgb(2, 97, 151, 0.5);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button.getintouch{
+  padding: 8px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: black;
+}
+
+button.getintouch:hover{
+  background-color: rgb(2, 97, 151, 0.6);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.counting{
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  justify-content: space-between;
+  
+}
+
+
+/* SERVICES SECTION CSS */
+
+section.Services{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 15px;
+  padding: 20px;
+  background-color: rgb(177, 236, 236);
+  border-radius: 20px;
+}
+
+section #ServicesCard{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.service-card{
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3{
+  color: rgb(2, 97, 151);
+  margin-bottom: 10px;
+}
+
+.service-card p{
+  color: #333;
+  line-height: 1.6;
+}
+
+#contact{
+  margin: 15px;
+  padding: 20px;
+  background-color: rgb(177, 236, 236);
+  border-radius: 20px;
+}
+
+#contact h1{
+  color: rgb(2, 97, 151);
+}
+
+#contact form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+#contact label{
+  font-weight: bold;
+  color: #333;
+}
+
+#contact input,
+#contact textarea{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.submit-btn{
+  padding: 12px 20px;
+  background-color: rgb(2, 97, 151);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.submit-btn:hover{
+  background-color: rgba(2, 97, 151, 0.8);
+}
+
+
+footer{
+  background-color: rgb(2, 97, 151);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+
+/* Hamburger menu styling */
+.nav-toggle{
+  display: none;
+}
+
+.harmbuger{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.harmbuger span{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.harmbuger.active span:nth-child(1){
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.harmbuger.active span:nth-child(2){
+  opacity: 0;
+}
+
+.harmbuger.active span:nth-child(3){
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Mobile Responsive CSS */
+@media (max-width: 768px) {
+  nav{
+    flex-wrap: wrap;
+  }
+
+  .harmbuger{
+    display: flex;
+  }
+
+  nav ul{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
+    background-color: rgb(2, 97, 151);
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    border-radius: 0 0 15px 15px;
+  }
+
+  nav ul.active{
+    display: flex;
+  }
+
+  nav ul li{
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  section.hero{
+    grid-template-columns: 0fr;
+    padding: 15px;
+  }
+
+  .counting{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    gap: 20px;
+  }
+
+  section.Services{
+    flex-direction: column;
+  }
+
+  .service-card{
+    min-width: 80%;
+  }
+
+  #contact form{
+    max-width: 100%;
+  }
+
+  section.projects{
+    margin: 15px 0;
+    padding: 15px;
+  }
+
+  #projectsCard{
+    flex-direction: column;
+  }
+
+  .project-item{
+    min-width: 100%;
+  }
+}
